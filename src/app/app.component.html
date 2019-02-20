@@ -1,0 +1,30 @@
+<div class="top-menu">
+
+  <img class="logo"
+       src="https://angular.io/assets/images/logos/angular/angular.svg">
+
+</div>
+
+<div>
+
+  <div class="demo">
+
+
+      <button (click)="onEditCourse()" i18n>Editar Curso</button>
+
+  </div>
+
+  <div class="courses">
+
+    <course-card *ngFor="let course of  courses  "
+                 (courseChanged)="save($event)"
+                 type="beginner"
+                 [course]="course">
+      <course-image [src]="course.iconUrl"></course-image>
+    </course-card>
+  </div>
+</div>
+
+
+
+
