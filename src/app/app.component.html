@@ -1,0 +1,26 @@
+<div class="top-menu">
+
+  <img class="logo"
+       src="https://angular.io/assets/images/logos/angular/angular.svg">
+
+</div>
+
+<div>
+
+  <div class="courses">
+
+    <course-card *ngFor="let course of courses"
+                 [course]="course">
+
+      <course-image [src]="course.iconUrl"></course-image>
+
+    </course-card>
+
+  </div>
+
+
+</div>
+
+
+
+
